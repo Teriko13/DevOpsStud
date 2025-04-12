@@ -1,0 +1,9 @@
+### Поиск логов и их размера
+- Команда: `find /var/log -type f -name "*.log"`
+- Найденные файлы:
+  - /var/log/syslog
+  - /var/log/auth.log
+  - /var/log/nginx/access.log
+- Команда для общего размера: `find /var/log -type f -name "*.log" -exec du -ch {} + | grep total$`
+- Общий размер: 1.9M
+- Команда для размера каждого файла: `find /var/log -type f -name "*.log" -exec du -h {} \;`
