@@ -1,0 +1,13 @@
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519
+Host kzvpn
+	HostName 213.148.10.181
+	User root
+	Port 2007
+	IdentityFile ~/.ssh/id_ed25519
+Host vagr 
+	HostName 192.168.33.10
+	User vagrant
+	IdentityFile ~/Documents/VM/test
